@@ -25,6 +25,7 @@ const Setting = require('./Setting');
 const EmailCampaign = require('./EmailCampaign');
 const VerificationToken = require('./VerificationToken');
 const TwoFactorAuth = require('./TwoFactorAuth');
+const File = require('./File');
 
 module.exports = {
   User,
@@ -54,4 +55,5 @@ module.exports = {
   EmailCampaign,
   VerificationToken,
   TwoFactorAuth,
+  File,
 };

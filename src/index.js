@@ -21,6 +21,7 @@ import affiliateRoutes from './routes/affiliate.routes.js';
 import walletRoutes from './routes/wallet.routes.js';
 import reviewRoutes from './routes/review.routes.js';
 import adminRoutes from './routes/admin.routes.js';
+import fileRoutes from './routes/file.routes.js';
 
 dotenv.config();
 
@@ -98,8 +99,10 @@ app.use('/api/v1/affiliates', affiliateRoutes);
 app.use('/api/v1/wallet', walletRoutes);
 app.use('/api/v1/reviews', reviewRoutes);
 app.use('/api/v1/admin', adminRoutes);
+app.use('/api/v1/files', fileRoutes);
 
 // Serve static files
+app.use('/uploads', express.static('uploads'));
 app.use('/storage', express.static('storage'));
 
 // 404 Handler
