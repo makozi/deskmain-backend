@@ -22,7 +22,11 @@ const Review = require('./Review');
 const APILog = require('./APILog');
 const AuditLog = require('./AuditLog');
 const Setting = require('./Setting');
+const EmailTemplate = require('./EmailTemplate');
 const EmailCampaign = require('./EmailCampaign');
+const EmailSubscriber = require('./EmailSubscriber');
+const EmailSequence = require('./EmailSequence');
+const EmailLog = require('./EmailLog');
 const VerificationToken = require('./VerificationToken');
 const TwoFactorAuth = require('./TwoFactorAuth');
 const File = require('./File');
@@ -52,7 +56,11 @@ module.exports = {
   APILog,
   AuditLog,
   Setting,
+  EmailTemplate,
   EmailCampaign,
+  EmailSubscriber,
+  EmailSequence,
+  EmailLog,
   VerificationToken,
   TwoFactorAuth,
   File,

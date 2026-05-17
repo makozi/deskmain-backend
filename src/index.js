@@ -22,6 +22,7 @@ import walletRoutes from './routes/wallet.routes.js';
 import reviewRoutes from './routes/review.routes.js';
 import adminRoutes from './routes/admin.routes.js';
 import fileRoutes from './routes/file.routes.js';
+import emailRoutes from './routes/email.routes.js';
 
 dotenv.config();
 
@@ -100,6 +101,7 @@ app.use('/api/v1/wallet', walletRoutes);
 app.use('/api/v1/reviews', reviewRoutes);
 app.use('/api/v1/admin', adminRoutes);
 app.use('/api/v1/files', fileRoutes);
+app.use('/api/v1/email', emailRoutes);
 
 // Serve static files
 app.use('/uploads', express.static('uploads'));
