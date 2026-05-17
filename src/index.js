@@ -24,6 +24,16 @@ import adminRoutes from './routes/admin.routes.js';
 import fileRoutes from './routes/file.routes.js';
 import emailRoutes from './routes/email.routes.js';
 import webhookRoutes from './routes/webhook.routes.js';
+import courseRoutes from './routes/course.routes.js';
+import moduleRoutes from './routes/module.routes.js';
+import lessonRoutes from './routes/lesson.routes.js';
+import subscriptionRoutes from './routes/subscription.routes.js';
+import couponRoutes from './routes/coupon.routes.js';
+import searchRoutes from './routes/search.routes.js';
+import notificationRoutes from './routes/notification.routes.js';
+import analyticsRoutes from './routes/analytics.routes.js';
+import disputeRoutes from './routes/dispute.routes.js';
+import settingRoutes from './routes/setting.routes.js';
 
 dotenv.config();
 
@@ -104,6 +114,16 @@ app.use('/api/v1/admin', adminRoutes);
 app.use('/api/v1/files', fileRoutes);
 app.use('/api/v1/email', emailRoutes);
 app.use('/api/v1/webhooks', webhookRoutes);
+app.use('/api/v1/courses', courseRoutes);
+app.use('/api/v1/modules', moduleRoutes);
+app.use('/api/v1/lessons', lessonRoutes);
+app.use('/api/v1/subscriptions', subscriptionRoutes);
+app.use('/api/v1/coupons', couponRoutes);
+app.use('/api/v1/search', searchRoutes);
+app.use('/api/v1/notifications', notificationRoutes);
+app.use('/api/v1/analytics', analyticsRoutes);
+app.use('/api/v1/disputes', disputeRoutes);
+app.use('/api/v1/settings', settingRoutes);
 
 // Serve static files
 app.use('/uploads', express.static('uploads'));
