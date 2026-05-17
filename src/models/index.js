@@ -23,6 +23,8 @@ const APILog = require('./APILog');
 const AuditLog = require('./AuditLog');
 const Setting = require('./Setting');
 const EmailCampaign = require('./EmailCampaign');
+const VerificationToken = require('./VerificationToken');
+const TwoFactorAuth = require('./TwoFactorAuth');
 
 module.exports = {
   User,
@@ -50,4 +52,6 @@ module.exports = {
   AuditLog,
   Setting,
   EmailCampaign,
+  VerificationToken,
+  TwoFactorAuth,
 };
